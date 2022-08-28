@@ -1,0 +1,172 @@
+body {
+    /* Default font settings */
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+
+    margin: 0;
+    padding-top: 60px;
+    background-color: #1b1b1b;
+}
+
+.navBar {
+    font-family: "JetBrains Mono", monospace;
+    padding: 20px 40px;
+    width: 100%;
+    color: white;
+    background-color: #1b1b1b;
+    border-bottom: thin solid white;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1em;
+}
+
+.title {
+    font-size: large;
+    text-decoration: none;
+    color: white;
+    margin-right: 1em;
+}
+
+.underscoreHTML {
+    color: rgb(229, 143, 189);
+}
+
+.underscoreCSS {
+    color: deepskyblue;
+}
+
+.topic {
+    padding: 5px 10px;
+    margin: 0;
+    border-radius: 6px;
+    font-size: medium;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.topic:hover {
+    color: rgb(143, 176, 229);
+    background-color: rgba(97, 146, 231, 0.29);
+}
+
+main {
+    margin: 40px;
+    color: ghostwhite;
+}
+
+h1 {
+    margin: 0;
+}
+
+.skipToLang {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.7em;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.lang {
+    font-family: "JetBrains Mono", monospace;
+    border-radius: 6px;
+    padding: 4px 6px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.HTMLLang:hover {
+    color: rgb(229, 143, 189);
+    background-color: rgba(231, 97, 144, 0.29);
+}
+
+.CSSLang:hover {
+    color: rgb(143, 176, 229);
+    background-color: rgba(97, 146, 231, 0.29);
+}
+
+h2 {
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+/* Table styling from
+   https://dev.to/dcodeyt/creating-beautiful-html-tables-with-css-428l
+*/
+
+@media (max-width: 1200px) {
+    table {
+        border-collapse: collapse;
+        margin: 10px 0 50px 0;
+        font-size: 0.9em;
+        box-shadow: 0 0 20px rgba(105, 105, 105, 0.15);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 1200px) {
+    table {
+        border-collapse: collapse;
+        margin: 10px 0 50px 0;
+        font-size: 0.9em;
+        width: 1000px;
+        box-shadow: 0 0 20px rgba(105, 105, 105, 0.15);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+}
+
+
+.HTMLTable thead tr {
+    background-color: rgba(231, 97, 144, 0.29);
+    color: rgb(229, 143, 189);
+    text-align: left;
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+}
+
+.HTMLTable tbody tr {
+    border-bottom: thin solid rgba(231, 97, 144, 0.29);
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: #111111;
+}
+
+.HTMLTable tbody tr:last-of-type {
+    border-bottom: 4px solid rgba(231, 97, 144, 0.29);
+}
+
+.CSSTable thead tr {
+    background-color: rgba(97, 146, 231, 0.26);
+    color: rgb(188, 206, 239);
+    text-align: left;
+}
+
+.CSSTable tbody tr {
+    border-bottom: thin solid rgba(97, 146, 231, 0.26);
+}
+
+.CSSTable tbody tr:last-of-type {
+    border-bottom: 4px solid rgba(97, 146, 231, 0.26);
+}
+
+.code {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 13px;
+    background-color: #363636;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
