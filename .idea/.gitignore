@@ -3,5 +3,3 @@
 /workspace.xml
 # Editor-based HTTP Client requests
 /httpRequests/
-# Ignore all files in the .idea folder
-.idea/*
